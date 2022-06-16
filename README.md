@@ -1,5 +1,5 @@
-# jpmc-theatre
-A test movie theatre app to access showtimes info and make reservation
+# jpmc-theater
+A test movie theater app to access showtimes info and make reservation
 
 # Introduction
 
