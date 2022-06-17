@@ -30,3 +30,20 @@ This is a poorly written application, and we're expecting the candidate to great
   * Any movies showing on 7th, you'll get 1$ discount
   * The discount amount applied only one if met multiple rules; biggest amount one
 * We want to print the movie schedule with simple text & json format
+
+## Refactoring and Enhancement - 
+* Limiting the Theater Booking system offering the following user story 
+  * As a customer I want to View list of Showings in the Theater for a day, from which I should be able to select a show 
+    and book a ticket if the show is available.  
+  * As a theater I want to keep track of all the Tickets available and sold, I also want to provide discount to ticket price. 
+  * As a theater I want to interchange data in JSON format
+* Based on above here are the limited feature - 
+  * View current day's Showings in human readable format
+  ** View filter Showing for a given Movie and/or starting within certain duration
+  * Book ticket(s) for a Showing
+  ** Cancellation API has not been exposed.
+* Remodeled objects to domain and service companents keeping with OO principle of composition/aggregation and generalization and generics.
+* Extracted interfaces from Service and Repo, to only expose the contracts. 
+* Use DI principles to provide construct time behavior change, also helps with testing framworks like Mockito
+* Use SpringBoot framework to provide inversion of control.
+* Use JUnit and Mockito framework for testing.	
